@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Ubuntu:wght@300;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #413250;
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 30px auto;
+    width: 90%;
+    display: none;
+
+}
+nav {
+    position: fixed;
+    width: 90%;
+    left: 18px;
+    top: 0;
+    padding-top: 20px;
+    height: 150px;
+    background-color: #413250;
+}
+
+.word {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 17px;
+    color: white;
+    text-transform: capitalize;
+}
+
+#search {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    border-radius: 11px;
+    padding: 0 12px;
+    font-size: 25px;
+    border: none;
+}
+
+#search::placeholder {
+    color: #e2dce7;
+}
+
+#search:focus {
+    outline: none;
+  }
+
+
+.search-svg {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 30px;
+    left: 90%;
+}
+
+.def {
+    border: none;
+    width: 99%;
+    margin-left: 1px;
+    margin-top: 25px;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: white;
+    padding: 20px;
+    display: none;
+}
+
+.play-btn {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    stroke-width: 1px;
+
+}
+.definitions {
+    margin-top: 170px;
+}
+
+.transcription {
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: center;
+    color: #413250;
+}
+
+.play-trans {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+    align-self: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.main-text {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.part-of-speech {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 35px;
+    color: #413250;
+
+}
+
+.text-div {
+    padding: 15px 10px 10px 35px;
+}
+
+.example {
+    margin-top: 10px;
+    padding: 10px 10px 10px 25px;
+    width: 94%;
+    border-radius: 6px;
+    background: #f1f1f1;
+    margin: 15px auto;
+}
+
+.syn {
+    background-color: white;
+    height: fit-content;
+    padding: 10px;
+    width: 80%;
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 13px
+}
+.synonyms {
+    margin-top: 20px;
+    display: flex;
+    background-color: #413250;
+    width: 70%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .96);
+    z-index: 1;
+    place-content: center;
+    display: none;
+}
+
+/* footer {
+    border: 1px solid red;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: white;
+} */
+
+.home {
+    height: 75%;
+    position: absolute;
+    top: 140px;
+    left: 18px;
+    width: 90%;
+    border: none;
+    border-radius: 11px;
+    background-color: white;
+    display: block;
+}
+
+.home-search {
+    margin: 55% 0 10px 35%;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background: #f2f1f4;
+    border-radius: 50%;
+}
+
+.home p {
+    padding: 8px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.wrong-word-paragraph {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 15px;
+    line-height: 22px;
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.wrong-word {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .96);
+    z-index: 1;
+    place-content: center;
+    display: none;
+}
+
+#back-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* --------- Main Page -------*/
+
+.main {
+    background-image: radial-gradient(circle at 28% 51%, rgba(206, 206, 206,0.03) 0%, rgba(206, 206, 206,0.03) 17%,transparent 17%, transparent 100%),radial-gradient(circle at 45% 10%, rgba(10, 10, 10,0.03) 0%, rgba(10, 10, 10,0.03) 45%,transparent 45%, transparent 100%),radial-gradient(circle at 48% 44%, rgba(74, 74, 74,0.03) 0%, rgba(74, 74, 74,0.03) 84%,transparent 84%, transparent 100%),radial-gradient(circle at 47% 50%, rgba(186, 186, 186,0.03) 0%, rgba(186, 186, 186,0.03) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 29% 70%, rgba(9, 9, 9,0.03) 0%, rgba(9, 9, 9,0.03) 32%,transparent 32%, transparent 100%),radial-gradient(circle at 2% 75%, rgba(179, 179, 179,0.03) 0%, rgba(179, 179, 179,0.03) 19%,transparent 19%, transparent 100%),radial-gradient(circle at 2% 36%, rgba(26, 26, 26,0.03) 0%, rgba(26, 26, 26,0.03) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 53% 70%, rgba(90, 90, 90,0.03) 0%, rgba(90, 90, 90,0.03) 55%,transparent 55%, transparent 100%),radial-gradient(circle at 28% 92%, rgba(31, 31, 31,0.03) 0%, rgba(31, 31, 31,0.03) 35%,transparent 35%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));    width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    opacity: 0%;
+    font-size: 25px;
+    line-height: 30px;
+    color: #413250;
+    margin-bottom: 340px;
+    animation: slide-text 2s ease-out 1 forwards;
+}
+
+
+
+.explore-btn {
+    border: 1px solid black;
+    font-size: 40px;
+    border-radius: 9px;
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    opacity: 0%;
+    color: white;
+    background-color: #413250;
+    animation: slide-in 2s ease-in-out 1s 1 forwards;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+        /* transform: translateY(150%); */
+    }
+}
+
+@keyframes slide-text {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(135%);
+    }
+}
