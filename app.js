@@ -108,7 +108,7 @@ function getDefinitions(data) {
         defText[i].innerText = meanings[i].definitions[0].definition;
         
         if (!meanings[i].definitions[0].example) {
-            example[i].innerText = `API doesn't contain example ${i + 1} for this word`
+            example[i].innerText = "no example🥲"
         } else {
             example[i].innerText = meanings[i].definitions[0].example;
         }
