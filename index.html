@@ -4,86 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
     <title>Dictionary</title>
-    <link rel="stylesheet" href="app.css">
 </head>
 <body>
+    <div class="main">
+            <div class="main-container">
+            <p class="intro-text">
+                Search for English words and get definitions, examples, synonyms, etc. <br>
+                This Dictionary is a practice project! You are welcome to make contributions and suggestions.
+            </p>
 
-    <div class="overlay"> 
-        <svg class="loader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgba(255, 255, 255, 0); display: block; shape-rendering: auto;" width="100px" height="100px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-            <circle cx="50" cy="50" fill="none" stroke="#08AEEA" stroke-width="6.5" r="31" stroke-dasharray="146.08405839192537 50.69468613064179">
-              <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="0.7042253521126761s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
-            </circle>
-            </svg>
-    </div> 
-
-    <div class="wrong-word">
-        <p class="wrong-word-paragraph"></p>
-        <button id="back-btn">Go back</button>
+            <a href="/index.html" class="explore-btn">Explore</a>
+        </div>
     </div>
-
-    <nav>
-         <input type="text" name="search" id="search" placeholder="Search word" autofocus>
-         <svg class="search-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-         <p class="word">Word</p>
-     </nav>
-   <div class="container">
-       <div class="definitions">
-           <div class="def-1 def">
-            <div class="play-trans">
-                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                <audio id="myAudio">
-                    <source src="" type="audio/mpeg">
-                  </audio>                
-                  <p class="transcription">transcription</p>
-           </div>
-                <p class="part-of-speech">part of speach</p>
-           <div class="text-div">
-               <p class="def-content-1 main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus porro pariatur sint laboriosam reiciendis eos eius officiis, impedit nisi aliquam!</p>
-            </div>
-            <p class="example">example</p>
-            </div>
-
-           <div class="def-2 def">
-            <div class="play-trans">
-                <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                <p class="transcription">transcription</p>
-           </div>
-                <p class="part-of-speech">part of speach</p>
-           <div class="text-div">
-                <p class="def-content-1 main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus porro pariatur sint laboriosam reiciendis eos eius officiis, impedit nisi aliquam!</p>
-            </div>
-            <p class="example">example</p>
-            </div>
-
-           <div class="def-3 def">
-               <div class="play-trans">
-                    <svg class="play-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
-                    <p class="transcription">transcription</p>
-               </div>
-                    <p class="part-of-speech">part of speach</p>
-               <div class="text-div">
-                    <p class="def-content-1 main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus porro pariatur sint laboriosam reiciendis eos eius officiis, impedit nisi aliquam!</p>
-                </div>
-                <p class="example">example</p>
-            </div>
-       </div>
-
-       <div class="synonyms">
-           <div class="syn-1 syn">first synonym</div>
-           <div class="syn-2 syn">second synonym</div>
-           <div class="syn-3 syn">third synonym</div>
-           <div class="syn-4 syn">third synonym</div>
-           <div class="syn-5 syn">third synonym</div>
-       </div>
-   </div> 
-   <div class="home">
-       <svg class="home-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-       <p>Search for the most easy to complicated words and get different definitions, examples and synonyms.</p>
-   </div>
-
-   <!-- <footer>Franklin ©2022</footer> -->
-
-   <script src="app.js"></script>
+    
 </body>
 </html>
