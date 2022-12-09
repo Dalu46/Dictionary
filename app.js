@@ -108,7 +108,7 @@ function getDefinitions(data) {
         defText[i].innerText = meanings[i].definitions[0].definition;
         
         if (!meanings[i].definitions[0].example) {
-            example[i].innerText = "no example🥲"
+            example[i].innerText = "There's no example for this word 🥲"
         } else {
             example[i].innerText = meanings[i].definitions[0].example;
         }
