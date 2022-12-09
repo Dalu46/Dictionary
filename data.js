@@ -102,6 +102,6 @@ let data = [
     }
 ];
 
-let result = data[0].meanings[0].definitions[0].definition;
+// Accessing definitions
 
-console.log(result);
+let result = data[0].meanings[0].definitions[0].definition;
